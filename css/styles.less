@@ -60,7 +60,9 @@ body{
   height: 80px;
 
 }
-
+.icon>img:hover{
+  transform: scale(1.05)
+}
 .icon>a{
   text-decoration: none;
   color:black;
@@ -88,12 +90,47 @@ slider
     text-decoration: none;
     font-size: 50px
   }
+  border: 5px solid;
 }
 .img-slider{
-  width: 80%;
-  height: 90%;
-  background:;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.img-slider>img{
+  width: 100%;
+  height: 100%;
+}
 
+#left {
+  margin-right: 30px;
+  position: absolute;
+  left: 40px;
+
+}
+
+#right{
+  margin-left:30px;
+  position: absolute;
+  right: 50px
+}
+.text-img{
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid;
+  border-top: 5px solid;
+}
+.text-img>a{
+  color:white;
+  font-size: 20px;
 }
 /*<------section------->*/
 section{
